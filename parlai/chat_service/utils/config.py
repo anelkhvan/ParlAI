@@ -33,6 +33,7 @@ def parse_configuration_file(config_path):
     :return:
         parsed configuration dictionary
     """
+    config_path = "parlai/chat_service/tasks/qa_data_collection/config.yml"
     result = {}
     result["configs"] = {}
     with open(config_path) as f:
