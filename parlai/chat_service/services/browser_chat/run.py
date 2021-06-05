@@ -16,7 +16,7 @@ import parlai.chat_service.utils.config as config_utils
 
 SERVICE_NAME = 'Browser'
 
-config_path
+
 def setup_args():
     """
     Set up args.
@@ -47,7 +47,7 @@ def run(opt):
 
 if __name__ == '__main__':
     opt = setup_args()
-    config_path = opt.get('config_path')
+    config_path = opt.get('parlai/chat_service/tasks/qa_data_collection/config.yml')
     config = config_utils.parse_configuration_file(config_path)
     opt.update(config['world_opt'])
     opt['config'] = config
